@@ -281,3 +281,88 @@ body {
   color: var(--thirdColor);
   background-color: var(--fourthColor);
 }
+
+.logout {
+  border: none;
+}
+.modale__wrapper {
+  z-index: 10;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.348);
+}
+.modale {
+  background-color: var(--secondColor);
+  position: fixed;
+  top: 5%;
+  left: 10%;
+  width: 80%;
+  height: 90%;
+  border-radius: 1vw;
+  padding: 1vw;
+  font-size: 1.5vw;
+}
+.modale__close-button {
+  position: absolute;
+  top: 1vw;
+  right: 1vw;
+  width: fit-content;
+  cursor: pointer;
+}
+.edit__about__form {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.edit__about__form__label {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+.edit__about__form__text-area {
+  height: 35vh;
+}
+
+.edit__about__form__text-area,
+.edit__about__form__input {
+  color: var(--firstColor);
+  background-color: var(--secondColor);
+  border: solid 2px var(--firstColor);
+  border-radius: 0.5vw;
+  padding: 0.5vw;
+}
+.edit__about__form__button,
+.edit__about__form__input-file::file-selector-button {
+  width: fit-content;
+  margin: 0 auto;
+  color: var(--firstColor);
+  border: solid 0.2vw var(--firstColor);
+  border-radius: 1vw;
+  padding: 0.5vw;
+  cursor: pointer;
+}
+.edit__about__form__input-file::file-selector-button {
+  margin-right: 1vw;
+  font-family: var(--thirdFont);
+}
+.edit__about__form__input-file {
+  position: relative;
+  width: 100%;
+}
+
+.edit__about__form__button:hover,
+.edit__about__form__input-file::file-selector-button:hover {
+  color: var(--thirdColor);
+  background-color: var(--fourthColor);
+}
+.edit__about__form__picture {
+  position: absolute;
+  right: 10%;
+  width: 10vw;
+  height: 10vw;
+}
